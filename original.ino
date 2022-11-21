@@ -2,7 +2,7 @@
 #include <WiFi.h>
 #include <esp32cam.h>
 
-# Add here ssid and pwd
+// Add here ssid and pwd
 const char* WIFI_SSID = "<ssid>";
 const char* WIFI_PASS = "<pwd>";
  
@@ -85,4 +85,9 @@ void  setup(){
   server.on("/cam-mid.jpg", handleJpgMid);
  
   server.begin();
+}
+
+Void loop()
+{
+  server.handleClient();
 }
