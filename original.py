@@ -6,6 +6,7 @@ import urllib.request
 #cap = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_PLAIN
 
+# Add here ip from cam
 url = '<ip>'
 cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)
 
